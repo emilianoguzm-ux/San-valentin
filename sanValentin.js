@@ -56,7 +56,7 @@ function startFloatingHearts() {
   return setInterval(spawnHeart, 170);
 }
 
-const IMAGES = ["/data/8b281ed3-6405-44c3-9417-655f5da03185.JPG", "/data/9a2a2670-822c-4ecb-b449-7c279a9199c7.JPG", "/data/9e305568-7629-4f4c-b7e7-f00b76c41c91.JPG", "/data/9e305568-7629-4f4c-b7e7-f00b76c41c91.JPG", "/data/668cfcd4-ad86-44da-b155-74c740f6cddf.JPG"];
+const IMAGES = ["data/8b281ed3-6405-44c3-9417-655f5da03185.JPG", "data/9a2a2670-822c-4ecb-b449-7c279a9199c7.JPG", "data/9e305568-7629-4f4c-b7e7-f00b76c41c91.JPG", "data/9e305568-7629-4f4c-b7e7-f00b76c41c91.JPG", "data/668cfcd4-ad86-44da-b155-74c740f6cddf.JPG"];
 let imgIndex = 0;
 
 function spawnImageCrazy() {
@@ -206,3 +206,4 @@ btnNo.addEventListener("click", () => {
   const msgs = ["Porque noooo? 😳", "jajaja me odias verdad?", "que mal plan jaja otra vez?", "ya dale que sii", "jaja este mensaje ya es infinito hasta que le des si"];
   showMessageReplaceTitles(msgs[Math.min(noClicks - 1, msgs.length - 1)]);
 });
+
