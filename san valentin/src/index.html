@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Valentín</title>
+
+  <link rel="stylesheet" href="sanValentin.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+  <div id="image-layer" aria-hidden="true"></div>
+  <div id="hearts-layer" aria-hidden="true"></div>
+
+  <div id="videoOverlay" class="video-overlay hidden" aria-hidden="true">
+    <div class="video-shell" role="dialog" aria-label="Video de San Valentín">
+      <video id="valentinVideo" class="valentin-video" playsinline controls preload="metadata">
+        <source src="../data/a7215b90-1181-4687-92c3-a8c165e17c5b.MP4" type="video/mp4" />
+        Tu navegador no soporta video.
+      </video>
+      <button id="closeVideo" class="close-video" type="button" aria-label="Cerrar video">✕</button>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div id="textBlock" class="text-block">
+      <h1 id="title">Princesa Corgi</h1>
+      <h2 id="subtitle">¿Quieres ser mi San Valentín?</h2>
+      <p id="result" class="result hidden"></p>
+    </div>
+
+    <div id="buttons" class="buttons hidden">
+      <button id="btnYes" class="heart-btn" type="button" aria-label="Sí">
+        <span class="heart-shape" aria-hidden="true"></span>
+        <span class="btn-text">Sí</span>
+      </button>
+
+      <button id="btnNo" class="heart-btn heart-btn--alt" type="button" aria-label="No">
+        <span class="heart-shape" aria-hidden="true"></span>
+        <span class="btn-text">No</span>
+      </button>
+    </div>
+  </main>
+
+  <script src="sanValentin.js"></script>
+</body>
+</html>
